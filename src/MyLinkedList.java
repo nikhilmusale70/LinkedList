@@ -78,6 +78,21 @@ public class MyLinkedList {
         n1 = null;
     }
 
+    public void deleteAt(int data)
+    {
+        Node n = head;
+        Node n1 = null;
+        while (n.key != data){
+            if (n.next.key == data)
+                break;
+            n = n.next;
+        }
+
+        n1 = n.next;
+        n.next= n1.next;
+        n1 = null;
+    }
+
     public int findNode(int data){
         nodeIndex = 0;
         Node node = head;

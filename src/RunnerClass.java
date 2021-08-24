@@ -10,8 +10,11 @@ public class RunnerClass {
 
         int data =30;
         int nodeIndex = linkedList.findNode(data);
-
         linkedList.insertInto( (nodeIndex+1) , 40);
+        linkedList.show();
+        System.out.println();
+
+        linkedList.deleteAt(40);
         linkedList.show();
     }
 }
