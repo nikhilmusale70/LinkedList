@@ -9,6 +9,10 @@ public class RunnerClass {
 
         linkedList.insertInto(0,56);
         linkedList.show();
+        System.out.println();
+
+        linkedList.deleteAtFirst();
+        linkedList.show();
 
     }
 }

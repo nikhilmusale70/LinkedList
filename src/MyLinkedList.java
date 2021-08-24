@@ -47,6 +47,10 @@ public class MyLinkedList {
         n.next = node;
     }
 
+    public void deleteAtFirst(){
+        head = head.next;
+    }
+
     public void show(){
         Node node = head;
         while(node.next != null){
