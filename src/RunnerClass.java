@@ -16,5 +16,6 @@ public class RunnerClass {
 
         linkedList.deleteAt(40);
         linkedList.show();
+        linkedList.totalSize();
     }
 }
