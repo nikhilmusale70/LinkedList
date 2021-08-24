@@ -1,7 +1,7 @@
 public class MyLinkedList {
     Node head;
     int totalSize;
-    int nodeIndex;
+    static int nodeIndex;
 
     public void add(int key){
         Node node = new Node();
@@ -78,14 +78,14 @@ public class MyLinkedList {
         n1 = null;
     }
 
-    public void findNode(int data){
+    public int findNode(int data){
         nodeIndex = 0;
         Node node = head;
         while (node.key != data){
             node = node.next;
             nodeIndex++;
         }
-        System.out.println(data+ " is present on "+ nodeIndex + " index");
+        return nodeIndex;
     }
 
     public void show(){
