@@ -54,7 +54,7 @@ public class MyLinkedList {
         head = head.next;
     }
 
-    public void totalSize(){
+    public int totalSize(){
         Node n = head;
         totalSize =0;
 
@@ -62,7 +62,8 @@ public class MyLinkedList {
             n = n.next;
             totalSize++;
         }
-        System.out.println("list have "+(totalSize+1)+ " nodes");
+        return totalSize;
+        //System.out.println("list have "+(totalSize+1)+ " nodes");
     }
 
     public void deleteAtLast(){
