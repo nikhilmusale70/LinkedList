@@ -6,5 +6,11 @@ public class RunnerClass {
         linkedList.add(70);
 
         linkedList.show();
+
+        linkedList.append(30,56);
+        linkedList.append(70,30);
+
+        linkedList.show();
+
     }
 }

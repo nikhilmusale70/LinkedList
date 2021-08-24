@@ -18,6 +18,14 @@ public class MyLinkedList {
         }
     }
 
+    public void append(int key, int value){
+        Node node = head;
+        while (node.key != key){
+            node = node.next;
+        }
+        node.key = value;
+    }
+
     public void show(){
         Node node = head;
         while(node.next != null){
