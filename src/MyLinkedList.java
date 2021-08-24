@@ -1,6 +1,6 @@
 public class MyLinkedList {
     Node head;
-    public void insert(int key){
+    public void add(int key){
         Node node = new Node();
         node.key = key;
         node.next = null;
