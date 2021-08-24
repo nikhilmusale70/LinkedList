@@ -8,8 +8,6 @@ public class RunnerClass {
         linkedList.show();
         System.out.println();
 
-        linkedList.deleteAtLast();
-        linkedList.show();
-
+        linkedList.findNode(56);
     }
 }
