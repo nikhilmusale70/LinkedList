@@ -26,6 +26,27 @@ public class MyLinkedList {
         node.key = value;
     }
 
+    public void insertAtStart(int key){
+        Node node = new Node();
+        node.key = key;
+        node.next = null;
+    }
+
+    public void insertInto(int index, int value){
+        Node node = new Node();
+        node.key = value;
+        node.next = null;
+        if (index==0){
+            insertAtStart(value);
+        }
+        Node n = head;
+        for (int i=0; i< index-1; i++){
+            n = n.next;
+        }
+        node.next = n.next;
+        n.next = node;
+    }
+
     public void show(){
         Node node = head;
         while(node.next != null){
